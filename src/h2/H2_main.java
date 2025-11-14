@@ -9,29 +9,22 @@ public class H2_main {
 		boolean b = true;
 		boolean c = true;
 		
-		int input = 11;    
+		int input = 10;    
 		// Nur 0,1,10 oder 11
 		
 		// E1: x ist wahr (hat also den Wert true).
 		// E2: y ist wahr.
 		// E3: die Werte von x und y sind unterschiedlich.
 		
-		if (input == 10 || input == 11) {
-			x = true;
-			} else {
-			x = false;}
-		
-		if (input == 11 || input == 1) {
-			y = true;
-		    } else {
-		    y = false;}
+		x = (input == 10 || input == 11);
+		y = (input == 11 || input == 1);
 		
 		if (x && y) {
 		    a = true;
 		    } else {
 			a = false;}
 		
-		if (x && y) {
+		if (x) {
 		    b = true;
 		    } else {
 			b = false;}
